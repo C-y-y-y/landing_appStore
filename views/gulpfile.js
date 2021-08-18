@@ -1,13 +1,12 @@
-var gulp = require('gulp');
-var rigger  = require('gulp-rigger');
-var log = require('fancy-log');
-log('Hello world!');
+'use strict';
 
-gulp.task('default', function () {
-  return new Promise(function(resolve, reject) {
-    gulp.src('./layouts/*.html')
-		.pipe(rigger('layouts'))
-		.pipe(gulp.dest('build/'));
-    resolve();
-  });
-});
+var gulp = require('gulp');
+var pug = require('gulp-pug');
+
+gulp.task('pug', function() {
+  return gulp.src('./frontend/*.pug')
+      .pipe(pug({
+        pretty:true
+      }))
+      .pipe(gulp.dest('build'));
+})
