@@ -1,0 +1,145 @@
+/*menu icon */
+
+.burger-menu {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 4; /* menu mark */
+}
+
+.burger-menu--active {
+  transition: 1.5s;
+  transition-timing-function: ease-out;
+  transform: rotate(180deg);
+}
+
+.burger-menu:hover .burger-menu__lines,
+.burger-menu:hover .burger-menu__lines::after {
+  width: 27px;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.burger-menu__lines,
+.burger-menu__lines::after,
+.burger-menu__lines::before {
+  position: absolute;
+  height: 2px;
+  background-color: black;
+}
+
+.burger-menu__lines {
+  width: 20px;
+  top: 50%;
+  right: 0;
+}
+
+.burger-menu__lines::before {
+  content: '';
+  top: -6px;
+  right: 0;
+  width: 27px;
+}
+
+.burger-menu__lines::after {
+  content: '';
+  top: 6px;
+  right: 0;
+  width: 13px;
+}
+
+.burger-menu--active .burger-menu__lines{
+  background-color: transparent;
+}
+
+.burger-menu--active .burger-menu__lines::before{
+  top: 0;
+  transform: rotate(45deg);
+  width: 27px;
+}
+
+.burger-menu--active .burger-menu__lines::after{
+  top: 0;
+  transform: rotate(-45deg);
+  width: 27px;
+}
+
+/* nav */
+
+.burger-menu__nav {
+  position: fixed;
+  top: 0;
+  z-index: 3; /* menu background */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 250px;
+  background-color: #0285E4;
+  overflow-y: auto;
+  right: -100%;
+  transition: 1.2s;
+  transition-timing-function: ease-in-out;
+}
+
+@media (min-width: 900px) {
+  .burger-menu {
+    display: none;
+  }
+
+  .burger-menu__nav {
+    position: absolute;
+    height: 20px;
+    width: 600px;
+    padding-top: 50px;
+    top: 40px;
+    left: 25vw;
+    flex-direction: row;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .burger-menu__link {
+    font-size: 16px;
+    margin: 0 25px;
+  }
+}
+
+.burger-menu__nav--active {
+  right: 0;
+}
+
+.burger-menu__link {
+  position: relative;
+  text-decoration: none;
+  color: black;
+  padding-bottom: 50px;
+}
+
+.burger-menu__link::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  background-color: black;
+  left: 0;
+  right: 0;
+  top: 30px;
+  width: 30%;
+  visibility: hidden;
+  z-index: 5; /* hover links */
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in;
+}
+
+.burger-menu__link:hover::after {
+  visibility: visible;
+  width: 100%;
+}
+
+.burger-menu__link:hover {
+  color: black;
+}

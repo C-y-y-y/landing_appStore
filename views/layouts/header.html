@@ -9,32 +9,62 @@
       >
         Sign Up
       </button>
-      <a href="">
-        <img src="../public/images/burger-menu.svg" alt="burger-menu">
-      </a>
+      <div>
+        <div
+          class="burger-menu"
+          id="toggler"
+        >
+          <span class="burger-menu__lines"></span>
+        </div>
+
+        <nav
+          class="burger-menu__nav"
+          id="nav"
+        >
+          <a href="" class="burger-menu__link">Home</a>
+          <a href="" class="burger-menu__link">Product</a>
+          <a href="" class="burger-menu__link">About</a>
+          <a href="" class="burger-menu__link">Contact</a>
+        </nav>
+      </div>
     </div>
   </section>
   <section class="header__info">
-    <h1 class="header__title">
-      Lightning fast prototyping
-    </h1>
-    <p class="header__text">
-      Most calendars are designed for teams. 
-      Slate is designed for freelancers who want a simple 
-      way to plan their schedule.
-    </p>
-    <div class="header_submit">
-      <img
-        src="../public/images/Shapes.png"
-        alt="shapes"
-      >
-      <button
-        class="btn btn-primary"
-        type="submit"
-        id="info__button"
-      >
-        Try For Free
-      </button>
+    <div class="header__text-conteiner">
+      <h1 class="header__title">
+        Lightning <br class="header__break-1">
+        fast prototyping
+      </h1>
+      <p class="header__text">
+        Most calendars are designed for
+        teams. Slate is designed for<br class="header__break-2">
+        freelancers who want a simple
+        way to plan their schedule.
+      </p>
+    </div>
+    <div class="header__submit">
+      <div class="header__media--container">
+        <img
+          src="../public/images/Shapes.svg"
+          alt="shapes"
+          class="header__shapes"
+        >
+        <button
+          class="btn btn-primary"
+          type="submit"
+          id="info__button"
+        >
+          Try For Free
+        </button>
+      </div>
+      <div class="header__media--container">
+        <img
+          src="../public/images/media.svg"
+          alt="media"
+          class="header__media"
+        >
+        <div class="header__cork"></div>
+      </div>
     </div>
   </section>
 </div>
