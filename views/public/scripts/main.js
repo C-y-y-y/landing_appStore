@@ -9,6 +9,3 @@ window.addEventListener('resize',function(){
     });
   }
 });
-
-
-

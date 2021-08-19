@@ -86,7 +86,7 @@
   transition-timing-function: ease-in-out;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1030px) {
   .burger-menu {
     display: none;
   }
@@ -94,10 +94,10 @@
   .burger-menu__nav {
     position: absolute;
     height: 20px;
-    width: 600px;
+    width: 400px;
     padding-top: 50px;
     top: 40px;
-    left: 25vw;
+    left: 35vw;
     flex-direction: row;
     background-color: white;
     overflow: hidden;
