@@ -11,7 +11,7 @@
     "test:only": "mate-scripts test",
     "build": "gulp pug",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gulp deploy",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only"
@@ -30,6 +30,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-node": "^9.0.1",
     "gh-pages": "^2.0.0",
+    "gulp-gh-pages": "^0.5.4",
     "gulp-htmllint": "0.0.16",
     "gulp-pagebuilder": "^0.1.4",
     "gulp-pug": "^5.0.0",
