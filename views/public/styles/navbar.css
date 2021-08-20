@@ -1,3 +1,4 @@
+/* navbar cards*/
 #navbar {
   padding: 0;
 }
@@ -13,13 +14,24 @@
 
 #navbar__button--subscribe {
   border-radius: 50px;
-  width: 174px;
+  width: 385px;
   height: 52px;
 }
 
+@media (min-width: 1000px) {
+  #navbar__button--subscribe {
+    width: 174px;
+  }
+
+  #exampleInputEmail1 {
+    width: 285px;
+  }
+}
+
 #exampleInputEmail1 {
-  width: 285px;
+  width: 385px;
   border-radius: 50px;
+  height: 52px;
 }
 
 .navbar__info {
@@ -42,15 +54,33 @@
 }
 
 .navbar__contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: #E1F1FD;
 }
+
 .navbar__phone--container {
   position: relative;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 1000px) {
+  .navbar__contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .navbar__phone--small {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar__phone {
+    display: none;
+  }
 }
 
 .navbar__phone {
@@ -61,13 +91,24 @@
   object-fit: contain;
 }
 
+@media (min-width: 1000px) {
+  #navbar__subscribe--enable {
+    padding-bottom: 120px;
+    padding-right: 0;
+    padding-left: 105px;
+    padding-top: 200px;
+    gap: 17px;
+  }
+}
+
 .navbar__subscribe {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  padding-left: 100px;
-  padding-top: 240px;
-  padding-bottom: 120px;
+  gap: 40px;
+  padding-top: 125px;
+  padding-left: 85px;
+  padding-right: 85px;
+  padding-bottom: 70px;
 }
 
 .navbar__title--2 {
@@ -75,8 +116,55 @@
   font-size: 40px;
 }
 
+@media (max-width: 900px) {
+  .navbar__title--2 {
+    margin: 0 50px;
+    text-align: center;
+  }
+}
+
 .navbar__email {
   display: flex;
-  flex-direction: row;
-  gap: 7px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+@media (min-width: 1000px) {
+  .navbar__email {
+    flex-direction: row;
+    gap: 7px;
+  }
+}
+
+.navbar__text {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #5C5C5C;
+}
+
+@media (max-width: 1000px) {
+  .navbar__text {
+    text-align: center;
+  }
+}
+
+/* carousel */
+
+@media (min-width: 1000px) {
+  #carouselExampleDark{
+    display: none;
+  }
+
+  .enable__carousel {
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+  }
+}
+
+@media (max-width: 1001px) {
+  .enable__carousel {
+    display: none;
+  }
 }
