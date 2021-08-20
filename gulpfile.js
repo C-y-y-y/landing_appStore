@@ -9,7 +9,7 @@ gulp.task('pug', function() {
       .pipe(pug({
         pretty:true
       }))
-      .pipe(gulp.dest('build'));
+      .pipe(gulp.dest('views/compile'));
 });
 
 gulp.task('deploy', function () {
@@ -18,9 +18,26 @@ gulp.task('deploy', function () {
 });
 
 var build = require('gulp-build');
+const { src, dest } = require('gulp');
  
-gulp.task('build', async function() {
-  gulp.src('scripts/*.js')
-      .pipe(build({}))
-      .pipe(gulp.dest('dist'));
+// function build() {
+//   return src([
+//     'views/compile/*.html',
+//     'views/public/images/*',
+//     'views/scripts/main.min.js',
+//     'views/styles/*.css',
+//   ], {base: 'views'})
+//     .pipe(dest('dist'))
+// }
+
+gulp.task('build', function () {
+  return gulp.src([
+    'views/compile/*.html',
+    'views/public/images/*',
+    'views/scripts/main.min.js',
+    'views/styles/*.css',
+  ])
+    .pipe(dest('dist'));
 });
+
+// exports.build = build;

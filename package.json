@@ -1,5 +1,5 @@
 {
-  "name": "gulp-boilerplate",
+  "name": "yar",
   "homepage": "https://c-y-y-y.github.io/landing_appStore/",
   "version": "1.0.0",
   "description": "Frontend boilerplate based on gulp",
@@ -53,5 +53,12 @@
     "fancy-log": "^1.3.3",
     "gulp": "^4.0.2",
     "pug": "^3.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/C-y-y-y/landing_appStore.git"
+  },
+  "bugs": {
+    "url": "https://github.com/C-y-y-y/landing_appStore/issues"
   }
 }
