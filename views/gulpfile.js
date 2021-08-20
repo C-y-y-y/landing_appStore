@@ -8,12 +8,12 @@ gulp.task('pug', function() {
       .pipe(pug({
         pretty:true
       }))
-      .pipe(gulp.dest('publish'));
+      .pipe(gulp.dest('.publish'));
 })
 
 var deploy = require('gulp-gh-pages');
 
 gulp.task('deploy', function () {
-  return gulp.src('./publish/*')
+  return gulp.src('./.publish/*')
     .pipe(deploy())
 });
