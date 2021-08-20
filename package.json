@@ -11,7 +11,7 @@
     "test:only": "mate-scripts test",
     "build": "gulp pug",
     "predeploy": "npm run build",
-    "deploy": "gulp deploy",
+    "deploy": "gh-pages -d build",
     "update": "mate-scripts update",
     "postinstall": "npm run update",
     "test": "npm run lint && npm run test:only"
