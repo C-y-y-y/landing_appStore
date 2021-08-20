@@ -45,12 +45,14 @@
 .navbar__title {
   color: white;
   font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
   font-size: 40px;
-  padding: 0 163px 80px;
+  margin: 0 163px 80px;
 }
 
 .navbar__img {
-  object-fit: cover;
+  height: 625px;
+  width: 370px;
 }
 
 .navbar__contact {
@@ -87,7 +89,7 @@
   position: absolute;
   bottom: -58px;
   height: 625px;
-  width: 415px;
+  width: 350px;
   object-fit: contain;
 }
 
@@ -151,8 +153,17 @@
 
 /* carousel */
 
+.carousel__wrap {
+  width: 370px;
+  height: 625px;
+}
+
 @media (min-width: 1000px) {
   #carouselExampleDark{
+    display: none;
+  }
+
+  .carousel__wrap {
     display: none;
   }
 

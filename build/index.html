@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/views/public/styles/burger-menu.css">
+    <link rel="stylesheet" href="/views/public/styles/header.css">
+    <link rel="stylesheet" href="/views/public/styles/footer.css">
+    <link rel="stylesheet" href="/views/public/styles/navbar.css">
+    <link rel="stylesheet" href="/views/public/styles/normilize.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Test task</title>
+  </head>
+  <body>
+    <div class="header">
+  <section class="header__top">
+    <img src="/views/public/images/figma-logo.png" alt="figma-logo">
+    <div class="header__menu">
+      <button
+        class="btn btn-primary"
+        type="button"
+        data-bs-toggle="modal"
+        data-bs-target="#exampleModal"
+        id="top__button"
+      >
+        Sign Up
+      </button>
+      <div>
+        <div
+          class="burger-menu"
+          id="toggler"
+        >
+          <span class="burger-menu__lines"></span>
+        </div>
+
+        <nav
+          class="burger-menu__nav"
+          id="nav"
+        >
+          <a href="#" class="burger-menu__link">Home</a>
+          <a href="#" class="burger-menu__link">Product</a>
+          <a href="#" class="burger-menu__link">About</a>
+          <a href="#" class="burger-menu__link">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </section>
+  <section class="header__info">
+    <div class="header__text-conteiner">
+      <h1 class="header__title">
+        Lightning <br class="header__break-1">
+        fast prototyping
+      </h1>
+      <p class="header__text">
+        Most calendars are designed for
+        teams. Slate is designed for<br class="header__break-2">
+        freelancers who want a simple
+        way to plan their schedule.
+      </p>
+    </div>
+    <div class="header__submit">
+      <div class="header__media--container">
+        <img
+          src="/views/public/images/Shapes.svg"
+          alt="shapes"
+          class="header__shapes"
+        >
+        <button
+          class="btn btn-primary"
+          id="info__button"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Try For Free
+        </button>
+      </div>
+      <div class="header__media--container">
+        <img
+          src="/views/public/images/media.svg"
+          alt="media"
+          class="header__media"
+          id="media"
+        >
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="navbar" id="navbar">
+  <section class="navbar__info">
+    <h2 class="navbar__title">
+      Fastest way to navigate
+    </h2>
+    <div class="carousel__wrap">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="/views/public/images/Card1.png" class="d-block w-100 navbar__img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="/views/public/images/Card2.png" class="d-block w-100 navbar__img" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <div
+      class="enable__carousel"
+      id="enable"
+    >
+      <img src="/views/public/images/Card1.png" class="d-block w-100 navbar__img" alt="...">
+      <img src="/views/public/images/Card2.png" class="d-block w-100 navbar__img" alt="...">
+    </div>
+
+    <button
+      type="button"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      class="btn btn-light"
+      id="navbar__button"
+    >
+      Try For Free
+    </button>
+  </section>
+
+  <section class="navbar__contact">
+    <div class="navbar__subscribe" id="navbar__subscribe--enable">
+      <h2 class="navbar__title--2">
+        OpenType features and
+        Variable fonts
+      </h2>
+      <p class="navbar__text">
+        Most calendars are designed for teams. Slate is designed 
+        for freelancers who want a simple way to plan
+        their schedule.
+      </p>
+      <div class="navbar__email">
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+          placeholder="Enter Your Adress Email"
+        >
+        <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+          id="navbar__button--subscribe"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+    <div class="navbar__phone--container">
+      <img
+        src="/views/public/images/iPhoneX.png"
+        alt="phone"
+        class="navbar__phone"
+      >
+
+      <img
+        src="/views/public/images/iPhoneXsmall.svg"
+        alt="phone"
+        class="navbar__phone--small"
+      >
+    </div>
+  </section>
+</div><div class="footer">
+  <section class="footer__rating">
+    <h2 class="footer__title">
+      Work better together
+    </h2>
+    <p class="footer__text">
+      Being a freelancer is a rollercoaster of emotions.
+      We built Slate to keep your freelance business less stressful.
+      We'd love to show you what we're building...
+    </p>
+    <div class="footer__progress--container">
+      <img
+        src="/views/public/images/Progress.svg"
+        alt="rating"
+        class="footer__progress"
+      >
+      <div class="footer__progress-info">
+        <span class="footer__info">
+          Facebook
+        </span>
+        <span class="footer__info">
+          35,929
+        </span>
+      </div>
+    </div>
+    <button
+      class="btn btn-primary"
+      type="button"
+      data-bs-toggle="modal"
+      data-bs-target="#exampleModal"
+      id="footer__button"
+    >
+      Try For Free
+    </button>
+  </section>
+  <section class="footer__navbar">
+    <img src="/views/public/images/logo.png" alt="logo">
+    <div class="footer__links--container">
+      <a href="https://twitter.com/" class="footer__link">
+        <img src="/views/public/images/twitter.svg" alt="twitter">
+      </a>
+      <a href="https://facebook.com/" class="footer__link">
+        <img src="/views/public/images/facebook.svg" alt="facebook">
+      </a>
+      <a href="https://www.linkedin.com/in/%D1%8F%D1%80%D0%BE%D1%81%D0%BB%D0%B0%D0%B2-%D0%BD%D0%B0%D0%B3%D1%83%D1%80%D0%BD%D1%8B%D0%B9-4baa1a218/" class="footer__link">
+        <img src="/views/public/images/linkedin.svg" alt="linkedin">
+      </a>
+    </div>
+    <span class="footer__sign">
+      Just type what's on your mind and we'll
+    </span>
+  </section>
+</div>
+    <script>const toggler = document.getElementById('toggler');
+const nav = document.getElementById('nav');
+const carousel = document.getElementById('carouselExampleDark');
+const enableCarousel = document.getElementById('enable');
+
+window.addEventListener('resize',function(){
+  if(window.innerWidth < 900) {
+    toggler.addEventListener('click', () => {
+      nav.classList.toggle('burger-menu__nav--active');
+      toggler.classList.toggle('burger-menu--active');
+    });
+  }
+});
+
+    </script><script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+  </body>
+</html>
